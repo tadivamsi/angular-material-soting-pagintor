@@ -1,0 +1,64 @@
+
+
+<div style="text-align:center;margin-top:50px"><button  mat-flat-button color="warn">Clickme</button></div>
+<hr>
+
+<mat-icon style="color:black">home</mat-icon>
+  <br>
+  <hr>
+<mat-icon style="color:cadetblue">check_circle</mat-icon>
+<hr>
+
+<input [matDatepicker]="myDatepicker">
+<mat-datepicker-toggle [for]="myDatepicker"></mat-datepicker-toggle>
+<mat-datepicker #myDatepicker></mat-datepicker>
+<br>
+<hr>
+<mat-checkbox > True </mat-checkbox> 
+<mat-checkbox [disabled]="isDisabled" style="margin-left:20px"> false</mat-checkbox> 
+<br>
+<hr>
+<mat-checkbox labelPosition="before">anguylar </mat-checkbox>
+<mat-checkbox labelPosition="after" style="margin-left:20px"> javascript</mat-checkbox> 
+<hr>
+<mat-slider color="primary"  ></mat-slider>
+
+<hr>
+<mat-slide-toggle style="color:chocolate">Slide me!</mat-slide-toggle>
+<hr>
+<!-- <p>
+  <span matBadge="4" matBadgeOverlap="false">Text with a badge</span>
+</p>
+
+<p>
+    <span matBadge="1" matBadgeSize="large">Text with large badge</span>
+</p>
+
+<p>
+  Button with a badge on the left
+  <button mat-raised-button color="primary"
+      matBadge="8" matBadgePosition="before" matBadgeColor="accent">
+    Action
+  </button>
+</p>
+
+<p>
+    Button toggles badge visibility
+    <button mat-raised-button matBadge="7" [matBadgeHidden]="hidden" (click)="toggleBadgeVisibility()">
+        Hide
+    </button>
+</p>
+
+<p>
+  Icon with a badge
+  <mat-icon matBadge="15" matBadgeColor="warn">home</mat-icon>
+    <!-- Include text description of the icon's meaning for screen-readers -->
+    <!-- <span class="cdk-visually-hidden">
+      Example with a home icon with overlaid badge showing the number 15
+    </span>
+</p> --> 
+
+<hr>
+
+<input [ngxTimepicker]="picker">
+<ngx-material-timepicker #picker></ngx-material-timepicker>
